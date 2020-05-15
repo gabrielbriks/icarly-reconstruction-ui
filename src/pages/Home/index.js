@@ -42,8 +42,13 @@ export default function Home(){
             <div className="bntHeader">
               <button className="iBlogs" >iBLOGS</button>
               <button className="iSnaps">iSNAPS</button>
+              <button className="iSnaps">iNEWS</button>
               <button className="iStrivia">iTRIVIA</button>
-              <button>iVIDEO</button>
+              <button className="iStrivia">iVIDEO</button>
+              <button className="iSnaps">iPLAY</button>
+              <button className="iStrivia">iSONGS</button>
+              <button className="iSnaps">iNEED HELP</button>
+              <button className="iSnaps">SEND US STUFF</button>
             </div>
             
 
