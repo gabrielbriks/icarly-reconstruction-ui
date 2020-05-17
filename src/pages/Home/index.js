@@ -1,9 +1,18 @@
 import React,{useState} from 'react';
 import { GiMagnifyingGlass } from "react-icons/gi";
+import { BsChatFill } from "react-icons/bs";
+import { MdPhotoCamera, MdSettingsInputAntenna, MdVideocam, MdMouse, MdEmail } from "react-icons/md";
+import { GoLightBulb } from "react-icons/go";
+import { FaPlayCircle, FaHeadphonesAlt } from "react-icons/fa";
+import { IoMdHelp } from "react-icons/io";
+import { GiMouse } from "react-icons/gi";
+import ReactPlayer from "react-player";
 
 import './styles.css';
 import logoImg from '../../assets/logo.png';
 import membrosICarly from '../../assets/membros-icarly.png';
+import player from '../../assets/player.png';
+
 
 export default function Home(){
   let date = new Date
@@ -40,19 +49,42 @@ export default function Home(){
             </div>
             
             <div className="bntHeader">
-              <button className="iBlogs" >iBLOGS</button>
-              <button className="iSnaps">iSNAPS</button>
-              <button className="iSnaps">iNEWS</button>
-              <button className="iStrivia">iTRIVIA</button>
-              <button className="iStrivia">iVIDEO</button>
-              <button className="iSnaps">iPLAY</button>
-              <button className="iStrivia">iSONGS</button>
-              <button className="iSnaps">iNEED HELP</button>
-              <button className="iSnaps">SEND US STUFF</button>
+              <button className="iBlogs" >iBLOGS <BsChatFill size={20}/></button>
+              <button className="iSnaps">iSNAPS <MdPhotoCamera size={20}/> </button>
+              <button className="iNews">iNEWS <MdSettingsInputAntenna size={20}/> </button>
+              <button className="iStrivia">iSTRIVIA <GoLightBulb size={20}/> </button>
+              <button className="iVideo">iVIDEO <MdVideocam size={20} /> </button>
+              <button className="iPlay">iPLAY <FaPlayCircle size={20}/> </button>
+              <button className="iSongs">iSONGS <FaHeadphonesAlt size={20} /> </button>
+              <button className="iNeed"> iNEED<IoMdHelp size={18} /> HELP </button>
+              <button className="iSendStuff">SEND<GiMouse size={22}/> US STUFF </button>
             </div>
             
 
           </div>
+         
+         <div className="section-player">
+
+          <button className="btnSendThisVideo">
+            <MdEmail size={22} style={{marginTop: '0px'}}/>   send this video to a friend
+          </button>
+          <ReactPlayer 
+            url="https://www.youtube.com/watch?v=GaUOQ5uSoyg" 
+            controls={true}
+            style={{position: "absolute", width: '500px', height: '500px', margin: '10vh 5.8%'}}
+          />
+          <div className="player">
+            <img 
+              src={player}
+              className="playerImg" 
+              alt="Image player"
+              style={{width: '700px'}}
+            />
+             
+              
+           </div>
+           
+         </div>
          
         </section>
       

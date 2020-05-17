@@ -39,15 +39,16 @@
   max-width: 390px;
   max-height: 250px;
   margin-top: 152px;
-  margin-right: 50px;
-  border-radius: 8px;  
+  margin-right: 14vh;
+  border-radius: 8px;
+    
 }
 
 /* content main of app*/
 .content {
   width: 100%;
   max-width: 1120px;
-  height: 100vh; 
+  height: 100em; 
   margin: 0 auto;
   display: flex;
   background: #ffb350;
@@ -134,34 +135,37 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 55px;
-  margin-top: 4.5%;
+  max-width: 1095px;
+  height: 60px;
+  margin-top: 4.0%;
+  margin-left: 0.5%;
   align-items: center;
-  
+  align-self: center;
   justify-content: center;
 
-
-  background: rgb(150, 31, 124);
+  border: 2.8px solid #cb9fd2;
+  box-shadow: 0 0 1em #d28ce2;
+  background: rgb(112, 26, 94);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.1), 
+  rgba(255,255,255,.4) 35%, rgba(255,255,255,0) 43%, rgba(255,255,255,.4));
+  transition: all .5s;
 } 
 
 .content section .bntHeader button {
   width: 100%;
-  max-width: 110px;
-  
+  max-width: 110px;  
   height: 100%;
   max-height: 47px;
   
-  border: 2.5px solid #bd7dcc;
+  border: 1.5px solid #cb9fd2 ;
   background-color: #601b71;
   color: white;
-
- 
+  margin-top: 5px;
+  margin-bottom: 5px;
   
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
   font-size: 18px;
-
-
   
   background-image: linear-gradient(to bottom, rgba(255,255,255,.1), 
   rgba(255,255,255,.4) 35%, rgba(255,255,255,0) 43%, rgba(255,255,255,.4));
@@ -173,23 +177,50 @@
   margin-left: 10px;
 }
 
-.content section .bntHeader button.iBlogs {
-  border-radius: 5px;
+.content section .bntHeader button.iNeed {
+
   
 } 
 
-.content section .bntHeader button.iSnaps {
-  /* border-radius: 10px 5px 1% 2px; */
-
-  /* border-top-left-radius:70%;
-    border-top-right-radius:70%; */
-
+.content section .bntHeader button.iSendStuff {
+  justify-content: space-between;
 }
 
 
 
+/* Player */
+.content .section-player {
+  /* margin:; */
+}
 
-.content section .bntHeader button{ 
-  margin-left: 0px;
-  
+.content .section-player .player {
+  width: 650px;
+  height: 500px;
+
+  /* border: 2px solid #000;
+  border-radius: 12px;
+
+  background-color: #f7fd51; */
+
+  margin: 12vh 5vh;
+}
+
+.content .section-player .player img {
+  /* position: relative; */
+}
+
+.btnSendThisVideo{
+  width: 500px;
+  height: 45px;
+  background: #e71837;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 0;
+  margin-left: 11%;
+  margin-bottom: 10%;
+  border-radius: 8px;
+  border: 1px solid #888;
 }
