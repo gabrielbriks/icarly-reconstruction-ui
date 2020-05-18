@@ -3,25 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+/*Font GamePixel - font-family: 'VT323', monospace;*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /*Container main of app*/
 .container {
-
   width: 100%;
+  max-width: 1400px;
   height: 100%;
   margin: 0 auto;
   display: flex;
-  /* background: #ff0; */
+
 }
 
 .container header{
   width: 100%;
-  max-height: 100%;
-  height: 350px; 
+  height: 100%;
+  height: 350px;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;  
+  /* align-items: flex-start; */
+  justify-content: space-between;
   position: absolute;
-
 }
 
 
@@ -31,31 +33,40 @@
   height: 250px;
   position: absolute;
   margin-top: 70px;
- 
+
+}
+
+container header .imgMembros{ 
+  /* margin-left: 30vh; */
+  max-width: 968px;
+
+
 }
 
 .container header .imgMembros img {
   width: 100%;
   max-width: 390px;
-  max-height: 250px;
+  height: 250px;
   margin-top: 152px;
-  margin-right: 14vh;
+  margin-right: 0;
+  margin-left: 795px;
   border-radius: 8px;
-    
+  /* position: unset; */
+  
+
 }
 
 /* content main of app*/
 .content {
   width: 100%;
   max-width: 1120px;
-  height: 100em; 
+  height: 100em;
   margin: 0 auto;
   display: flex;
   background: #ffb350;
   border-radius: 8.5px 8.5px 0px 0;
   border: solid 5px #fff;
   margin-top: 200px;
-
 }
 
 /*Header Green*/
@@ -68,29 +79,26 @@
   border-radius: 8.2px 8.2px 4px 4px;
   align-items: center;
   justify-content: center;
-    
 }
 
 .container .content section .search {
-  text-align: center; 
+  text-align: center;
   font-size: 22px;
   position: relative;
-  
 }
 
 .container .content section .search h3 {
-  /* text-shadow: -1px 0 #000 0 1px #000, 1px 0 #000, 0 -1px #000; */
   font-family: Passion One, sans-serif;
   color: #fff;
   text-align: center;
   margin-top: 70px;
   -webkit-text-stroke-width: 2.0px; /*Adiciona bordas no text*/
-  -webkit-text-stroke-color: rgba(37, 37, 37, 0.671); 
-  font-size: 35px;  
+  -webkit-text-stroke-color: rgba(37, 37, 37, 0.671);
+  font-size: 35px;
 }
 
 .container .content section .search input {
-  width: 150px;  
+  width: 150px;
   border: 2px solid #8ca835;
   box-shadow: 0 0 1em #8ca835;
   height: 28px;
@@ -119,7 +127,7 @@
     margin-left: 30px;
     font-family: Geneva, Verdana, sans-serif;
     font-weight: 600;
-    
+
  }
 
  .container .content section .search .todayIs {
@@ -130,7 +138,7 @@
     position: absolute;
  }
 
- 
+
 .content section .bntHeader {
   display: flex;
   flex-direction: row;
@@ -146,28 +154,28 @@
   border: 2.8px solid #cb9fd2;
   box-shadow: 0 0 1em #d28ce2;
   background: rgb(112, 26, 94);
-  background-image: linear-gradient(to bottom, rgba(255,255,255,.1), 
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.1),
   rgba(255,255,255,.4) 35%, rgba(255,255,255,0) 43%, rgba(255,255,255,.4));
   transition: all .5s;
-} 
+}
 
 .content section .bntHeader button {
   width: 100%;
-  max-width: 110px;  
+  max-width: 110px;
   height: 100%;
   max-height: 47px;
-  
+
   border: 1.5px solid #cb9fd2 ;
   background-color: #601b71;
   color: white;
   margin-top: 5px;
   margin-bottom: 5px;
-  
+
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  
-  background-image: linear-gradient(to bottom, rgba(255,255,255,.1), 
+
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.1),
   rgba(255,255,255,.4) 35%, rgba(255,255,255,0) 43%, rgba(255,255,255,.4));
   transition: all .5s;
 }
@@ -177,50 +185,135 @@
   margin-left: 10px;
 }
 
-.content section .bntHeader button.iNeed {
-
-  
-} 
-
-.content section .bntHeader button.iSendStuff {
-  justify-content: space-between;
-}
-
-
 
 /* Player */
 .content .section-player {
-  /* margin:; */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  /* justify-content: space-between; */
+
 }
 
 .content .section-player .player {
-  width: 650px;
+  width: 700px;
   height: 500px;
-
-  /* border: 2px solid #000;
-  border-radius: 12px;
-
-  background-color: #f7fd51; */
-
   margin: 12vh 5vh;
+
 }
 
-.content .section-player .player img {
-  /* position: relative; */
-}
-
-.btnSendThisVideo{
-  width: 500px;
-  height: 45px;
+button.btnSendThisVideo {
+  /* flex-direction: column; */
+  width: 30em;
+  height: 40px;
+  text-align: center;
   background: #e71837;
   position: absolute;
   text-align: center;
+  align-items: center;
   font-weight: bold;
   font-size: 16px;
   color: #fff;
-  margin-top: 0;
-  margin-left: 11%;
+  margin-top: 10vh;
+  margin-left: 5%;
   margin-bottom: 10%;
   border-radius: 8px;
   border: 1px solid #888;
+  box-shadow: inset;
+
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.1),
+  rgba(255,255,255,.4) 35%, rgba(255,255,255,0) 43%, rgba(255,255,255,.4));
+  transition: all 2s;
 }
+
+.content .section-player .playerImg {
+  width: 580px;
+  margin-left: -30px;
+
+}
+
+.area-icarlyExtras {
+  width: 100%;
+  /* max-width: 40vh; */
+  max-height: 39vh;
+}
+
+.area-icarlyExtras p.titleExtras {
+  margin-top: 12vh;
+  font-family: 'VT323', monospace;
+  font-size: 42px;
+}
+.area-icarlyExtras p.titleExtras i {
+  color: #1246f1;
+}
+
+.icarlyExtras {
+  width: 100%;
+  /* max-width: 40vh; */
+  max-height: 39vh;
+  text-align: end;
+  background: #384c8b;
+
+
+  margin-top: 2vh;
+  margin-right: 1vh;
+  margin-left: 0px;
+
+  border: 2px solid #000;
+  border-radius: 9px;
+
+  background-image: linear-gradient(to top, rgba(255,255,255,.1),
+  rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 55%, rgba(255,255,255,.4));
+}
+
+.icarlyExtras .imgZipper {
+  width: 275px;
+  height: 100%;
+  max-height: 39vh;
+}
+
+ .comments {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: start;
+  justify-content: space-around;
+  font-family: 'Varela Round', sans-serif;
+  justify-content: flex-start;
+  margin-top: 8%;
+  margin-left: 10px;
+}
+
+ .comments .comments-item {
+  display: flex;
+  max-width: 400px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  
+
+}
+ .comments .comments-item + .comments-item {
+  margin-top: 22px;
+}
+
+ .comments .comments-item i {
+  margin-left: 25%;
+
+
+}
+
+ .comments p {
+  max-width: 280px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+ .avatar {
+  width: 70px;
+  height: 70px;
+  margin-right: 8px;
+}
+

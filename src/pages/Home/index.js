@@ -3,7 +3,7 @@ import { GiMagnifyingGlass } from "react-icons/gi";
 import { BsChatFill } from "react-icons/bs";
 import { MdPhotoCamera, MdSettingsInputAntenna, MdVideocam, MdMouse, MdEmail } from "react-icons/md";
 import { GoLightBulb } from "react-icons/go";
-import { FaPlayCircle, FaHeadphonesAlt } from "react-icons/fa";
+import { FaPlayCircle, FaHeadphonesAlt, FaStar } from "react-icons/fa";
 import { IoMdHelp } from "react-icons/io";
 import { GiMouse } from "react-icons/gi";
 import ReactPlayer from "react-player";
@@ -11,8 +11,9 @@ import ReactPlayer from "react-player";
 import './styles.css';
 import logoImg from '../../assets/logo.png';
 import membrosICarly from '../../assets/membros-icarly.png';
-import player from '../../assets/player.png';
-
+import playerImg from '../../assets/player.png';
+import zipperImg from '../../assets/zipper.png';
+import avatar from '../../assets/avatar.png';
 
 export default function Home(){
   let date = new Date
@@ -27,10 +28,10 @@ export default function Home(){
           <img src={logoImg} className="imgLogo" alt="Logo iCarly"/>
         {/* </div> */}
       <header className="imgsHeader">
-      <div className="test"></div>
+      {/* <div className="test"></div> */}
         
         <div className="imgMembros">
-          <img src={membrosICarly} /*className="imgMembros"*/ alt="Membros iCarly"/>
+          <img src={membrosICarly} className="imgMembros" alt="Membros iCarly"/>
         </div>
       </header>
           
@@ -63,28 +64,68 @@ export default function Home(){
 
           </div>
          
-         <div className="section-player">
-
           <button className="btnSendThisVideo">
-            <MdEmail size={22} style={{marginTop: '0px'}}/>   send this video to a friend
+            <MdEmail size={22} style={{marginRight: '10px'}}/>   send this video to a friend
           </button>
-          <ReactPlayer 
-            url="https://www.youtube.com/watch?v=GaUOQ5uSoyg" 
-            controls={true}
-            style={{position: "absolute", width: '500px', height: '500px', margin: '10vh 5.8%'}}
-          />
-          <div className="player">
-            <img 
-              src={player}
-              className="playerImg" 
-              alt="Image player"
-              style={{width: '700px'}}
+          <div className="section-player">
+
+          
+            <ReactPlayer 
+              width={470}
+              height={350}
+              url="https://www.youtube.com/watch?v=GaUOQ5uSoyg" 
+              controls={true}
+              style={{position: "absolute", margin: '18vh 4.8%'}}
             />
-             
+            <div className="player">
+              <img 
+                src={playerImg}
+                className="playerImg" 
+                alt="Structure background player"
+              />
               
-           </div>
-           
-         </div>
+              
+            </div>
+            <div className="area-icarlyExtras">
+              <p className="titleExtras" >iClary <i>Extras</i></p>
+              <div className="comments">
+                  <div className="comments-item">
+                    <img src={avatar} className="avatar"/> 
+                    <p>
+                      Here are the ten best moments of the iCarly series. Video
+                      built by the YouTube Mojo channel.  
+                    </p>
+                    <i><FaStar color="#ffd700"/> 
+                      <FaStar color="#ffd700"/>
+                      <FaStar color="#ffd700"/> 
+                      <FaStar color="#ffd700"/>
+                    </i>
+                  </div>
+
+                  <div className="comments-item">
+                    <img src={avatar} className="avatar"/> 
+                    <p>
+                      Here are the ten best moments of the iCarly series. Video
+                      built by the YouTube Mojo channel.  
+                    </p>
+                      <i><FaStar color="#ffd700"/> 
+                      <FaStar color="#ffd700"/>
+                      <FaStar color="#ffd700"/> 
+                      <FaStar color="#ffd700"/>
+                    </i>
+                  </div>
+
+
+                  
+                </div>
+              <div className="icarlyExtras">
+                <img src={zipperImg} className="imgZipper" />
+                
+                
+              </div>
+            
+            </div>
+          </div>
          
         </section>
       
