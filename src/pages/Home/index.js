@@ -14,7 +14,8 @@ import membrosICarly from '../../assets/membros-icarly.png';
 import playerImg from '../../assets/player.png';
 import zipperImg from '../../assets/zipper.png';
 import avatar from '../../assets/avatar.png';
-import iconClickMeAboutIcarly from '../../assets/about-icarly-chat.png';
+import aboutIcarlyImage from '../../assets/about-icarly-chat.png';
+import carImg from '../../assets/car.png';
 
 export default function Home(){
   let date = new Date()
@@ -30,7 +31,7 @@ export default function Home(){
         {/* </div> */}
       <header className="imgsHeader">
       {/* <div className="test"></div> */}
-        <img src={iconClickMeAboutIcarly} className="aboutIcarlyImage" alt="More info about iCarly"/>
+        <img src={aboutIcarlyImage} className="aboutIcarlyImage" alt="More info about iCarly"/>
         <div className="imgMembros">
           <img src={membrosICarly} className="imgMembros" alt="Membros iCarly"/>
         </div>
@@ -88,7 +89,7 @@ export default function Home(){
               
             </div>
             <div className="area-icarlyExtras">
-              <p className="titleExtras" >iClary <i>Extras</i></p>
+              <p className="titleExtras" >iCarly <i>Extras</i></p>
               <div className="comments">
                   <div className="comments-item">
                     <img src={avatar} className="avatar"/> 
@@ -139,7 +140,8 @@ export default function Home(){
             </div>
           </div>
           <footer className="footer">
-            <h1>footer</h1>
+            
+            <img src={carImg} className="carImageFooter" alt="" />
         </footer>
         </section>
        
