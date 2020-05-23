@@ -56,14 +56,29 @@ container header .imgMembros{
 
 }
 
-/* content main of app*/
+/*Balão click info about iCarly*/
+.aboutIcarlyImage {
+  position: absolute;
+  width: 300px;
+  max-width: 320px;
+  margin-top: 52px;
+  margin-left: 640px;
+  transition: 2s;
+}
+
+.aboutIcarlyImage:hover {
+  opacity: .5;
+}
+
+
+/* content main of page*/
 .content {
   width: 100%;
   max-width: 1120px;
   height: 100em;
   margin: 0 auto;
   display: flex;
-  background: #ffb350;
+  background:#fff/*#ffb350*/;
   border-radius: 8.5px 8.5px 0px 0;
   border: solid 5px #fff;
   margin-top: 200px;
@@ -199,11 +214,12 @@ container header .imgMembros{
 .content .section-player .player {
   width: 700px;
   height: 500px;
-  margin: 12vh 5vh;
+  margin-top: 12vh;
+  margin-left: 5vh;
 
 }
 
-button.btnSendThisVideo {
+button.btnColorRed {
   /* flex-direction: column; */
   width: 30em;
   height: 40px;
@@ -227,6 +243,8 @@ button.btnSendThisVideo {
   transition: all 2s;
 }
 
+
+
 .content .section-player .playerImg {
   width: 580px;
   margin-left: -30px;
@@ -240,17 +258,18 @@ button.btnSendThisVideo {
 }
 
 .area-icarlyExtras p.titleExtras {
-  margin-top: 12vh;
+  margin-top: 9vh;
   font-family: 'VT323', monospace;
   font-size: 42px;
 }
 .area-icarlyExtras p.titleExtras i {
-  color: #1246f1;
+  color: #7a942e;
 }
 
 .icarlyExtras {
   width: 100%;
   /* max-width: 40vh; */
+  min-height: 350px;
   max-height: 39vh;
   text-align: end;
   background: #384c8b;
@@ -270,8 +289,10 @@ button.btnSendThisVideo {
 .icarlyExtras .imgZipper {
   width: 275px;
   height: 100%;
+  min-height: 350px;
   max-height: 39vh;
 }
+
 
  .comments {
   display: flex;
@@ -317,3 +338,32 @@ button.btnSendThisVideo {
   margin-right: 8px;
 }
 
+button#btnSeeMoreVideos {
+  max-width: 200px;
+  margin: 0;
+  position: relative;
+}
+
+button#btnUploudVideos {
+  max-width: 200px;
+  margin: 0;
+  position: relative;
+}
+
+.btnsAreaExtrasDown {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+
+.footer {
+  margin-top: 402px;
+  width: 100%;
+  height: 350px;
+  background:#f5a236;
+  position: relative;
+  
+}

@@ -14,9 +14,10 @@ import membrosICarly from '../../assets/membros-icarly.png';
 import playerImg from '../../assets/player.png';
 import zipperImg from '../../assets/zipper.png';
 import avatar from '../../assets/avatar.png';
+import iconClickMeAboutIcarly from '../../assets/about-icarly-chat.png';
 
 export default function Home(){
-  let date = new Date
+  let date = new Date()
   console.log(date)
   function handleSearch(){
     console.log('clikked')
@@ -29,7 +30,7 @@ export default function Home(){
         {/* </div> */}
       <header className="imgsHeader">
       {/* <div className="test"></div> */}
-        
+        <img src={iconClickMeAboutIcarly} className="aboutIcarlyImage" alt="More info about iCarly"/>
         <div className="imgMembros">
           <img src={membrosICarly} className="imgMembros" alt="Membros iCarly"/>
         </div>
@@ -58,13 +59,13 @@ export default function Home(){
               <button className="iPlay">iPLAY <FaPlayCircle size={20}/> </button>
               <button className="iSongs">iSONGS <FaHeadphonesAlt size={20} /> </button>
               <button className="iNeed"> iNEED<IoMdHelp size={18} /> HELP </button>
-              <button className="iSendStuff">SEND<GiMouse size={22}/> US STUFF </button>
+              <button className="iSendStuff"> SEND<GiMouse size={22}/>    US STUFF </button>
             </div>
             
 
           </div>
          
-          <button className="btnSendThisVideo">
+          <button className="btnColorRed">
             <MdEmail size={22} style={{marginRight: '10px'}}/>   send this video to a friend
           </button>
           <div className="section-player">
@@ -99,6 +100,7 @@ export default function Home(){
                       <FaStar color="#ffd700"/>
                       <FaStar color="#ffd700"/> 
                       <FaStar color="#ffd700"/>
+                      <FaStar color="#ffd700"/>
                     </i>
                   </div>
 
@@ -112,6 +114,7 @@ export default function Home(){
                       <FaStar color="#ffd700"/>
                       <FaStar color="#ffd700"/> 
                       <FaStar color="#ffd700"/>
+                      <FaStar color="#ffd700"/>
                     </i>
                   </div>
 
@@ -123,12 +126,24 @@ export default function Home(){
                 
                 
               </div>
-            
+              <div className="btnsAreaExtrasDown">
+                <button className="btnColorRed" id="btnSeeMoreVideos">
+                  see more videos
+                </button>
+
+                <button className="btnColorRed " id="btnUploudVideos">
+                  upload video
+                </button>
+              </div>
+             
             </div>
           </div>
-         
+          <footer className="footer">
+            <h1>footer</h1>
+        </footer>
         </section>
-      
+       
+       
       </div>
     </div>
   );
