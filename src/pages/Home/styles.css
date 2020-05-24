@@ -108,6 +108,7 @@ container header .imgMembros{
   position: relative;
 }
 
+/*Title of area search*/
 .container .content section .search h3 {
   font-family: Passion One, sans-serif;
   color: #fff;
@@ -118,6 +119,7 @@ container header .imgMembros{
   font-size: 35px;
 }
 
+/*Input of area search*/
 .container .content section .search input {
   width: 150px;
   border: 2px solid #8ca835;
@@ -127,6 +129,7 @@ container header .imgMembros{
 
  }
 
+ /*Button of area search "Lupa" */
  .container .content section .search .btnSearch {
     width: 35px;
     background: transparent;
@@ -159,7 +162,7 @@ container header .imgMembros{
     position: absolute;
  }
 
-
+/*Buttons header navBar */
 .content section .bntHeader {
   display: flex;
   flex-direction: row;
@@ -180,6 +183,7 @@ container header .imgMembros{
   transition: all .5s;
 }
 
+/*Buttons header navBar */
 .content section .bntHeader button {
   width: 100%;
   max-width: 110px;
@@ -224,7 +228,13 @@ container header .imgMembros{
   margin-left: 5vh;
 
 }
+.content .section-player .playerImg {
+  width: 580px;
+  margin-left: -30px;
 
+}
+
+/*Buttons red of page*/
 button.btnColorRed {
   /* flex-direction: column; */
   width: 30em;
@@ -249,16 +259,11 @@ button.btnColorRed {
   transition: all 2s;
 }
 
+/*Buttons Red of page with links*/
 button.btnColorRed a{
   color: #fff;
 }
 
-
-.content .section-player .playerImg {
-  width: 580px;
-  margin-left: -30px;
-
-}
 
 .area-icarlyExtras {
   width: 100%;
