@@ -1,7 +1,14 @@
 import React from 'react';
 import { GiMagnifyingGlass, GiMouse } from "react-icons/gi";
 import { BsChatFill } from "react-icons/bs";
-import { MdPhotoCamera, MdSettingsInputAntenna, MdVideocam, MdEmail } from "react-icons/md";
+import { 
+  MdPhotoCamera,
+  MdSettingsInputAntenna, 
+  MdVideocam,
+  MdEmail,
+  MdMovie,
+  MdLocalMovies
+} from "react-icons/md";
 import { GoLightBulb } from "react-icons/go";
 import { FaPlayCircle, FaHeadphonesAlt, FaStar } from "react-icons/fa";
 import { IoMdHelp } from "react-icons/io";
@@ -18,7 +25,9 @@ import aboutIcarlyImage from '../../assets/about-icarly-chat.png';
 import carImg from '../../assets/car.png';
 import voteImg from '../../assets/vote.png';
 import grupoIcarlyImg from '../../assets/grupo.png';
-
+import logoNetflixImg from '../../assets/netflix-logo.png';
+import logoNickImg from '../../assets/logo-nickelodeon.png';
+import logoYoutubeImg from '../../assets/YouTube-Logo.png';
 
 export default function Home(){
   let date = new Date()
@@ -156,6 +165,7 @@ export default function Home(){
               className="imgGrupoIcarly" 
               alt="Grupo iCalry web show"
             />
+
             
             <div className="voteVideo">
               <img 
@@ -179,14 +189,38 @@ export default function Home(){
                     size={45} 
                     color="#333"
                   />
-                </i>                
+                </i>               
               </div>
             </div>
+            
+            <div className="watchIcarly">
+              <p id="title">Watch iCarly</p>
+              <div className="watchItems">
+                <p> 
+                  {/* <i><MdLocalMovies size={30} /></i> */}
+                  <img src={logoNetflixImg} id="logoNetflix" alt="Watch in netflix"/>
+                
+                </p>
+                <p> 
+                  {/* <i><MdMovie /></i> */}
+                  <img src={logoNickImg} id="logoNickelodeon" alt="Watch in nickelodeon"/>
+                </p>
+                <p> 
+                  {/* <i><MdMovie /></i> */}
+                  <img src={logoYoutubeImg} id="logoNickelodeon" alt="Watch in nickelodeon"/>
+                </p>
+              
+              </div>
+              
 
+            </div>
 
-        </footer>
+          </footer>
+          <div id="withLove">
+            <p>Made with {"<3"} by <a href="#">Gabriel Briks</a></p>
+          </div>
         </section>
-       
+        
        
       </div>
     </div>
