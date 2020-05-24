@@ -1,11 +1,11 @@
-import React,{useState} from 'react';
-import { GiMagnifyingGlass } from "react-icons/gi";
+import React from 'react';
+import { GiMagnifyingGlass, GiMouse } from "react-icons/gi";
 import { BsChatFill } from "react-icons/bs";
-import { MdPhotoCamera, MdSettingsInputAntenna, MdVideocam, MdMouse, MdEmail } from "react-icons/md";
+import { MdPhotoCamera, MdSettingsInputAntenna, MdVideocam, MdEmail } from "react-icons/md";
 import { GoLightBulb } from "react-icons/go";
 import { FaPlayCircle, FaHeadphonesAlt, FaStar } from "react-icons/fa";
 import { IoMdHelp } from "react-icons/io";
-import { GiMouse } from "react-icons/gi";
+import { AiTwotoneDislike, AiTwotoneLike } from 'react-icons/ai';
 import ReactPlayer from "react-player";
 
 import './styles.css';
@@ -16,6 +16,7 @@ import zipperImg from '../../assets/zipper.png';
 import avatar from '../../assets/avatar.png';
 import aboutIcarlyImage from '../../assets/about-icarly-chat.png';
 import carImg from '../../assets/car.png';
+import voteImg from '../../assets/vote.png';
 
 export default function Home(){
   let date = new Date()
@@ -141,7 +142,18 @@ export default function Home(){
           </div>
           <footer className="footer">
             
-            <img src={carImg} className="carImageFooter" alt="" />
+            {/* <img src={carImg} className="carImageFooter" alt="" /> */}
+            <div className="voteVideo">
+              <img src={voteImg} className="voteImage" alt="Image vote video"/>
+              <p>Like this video?</p>
+              <div className="likeOrDisLike">
+                <i><AiTwotoneLike id="like" size={45} color="#cc9c00" style={{border: 2, borderColor: '#000'}}/></i>
+                <i>< AiTwotoneDislike id="disLike" size={45} color="#333"/></i>
+                
+                
+              </div>
+            </div>
+
         </footer>
         </section>
        
