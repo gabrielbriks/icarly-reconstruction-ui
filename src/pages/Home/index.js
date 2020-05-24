@@ -17,6 +17,8 @@ import avatar from '../../assets/avatar.png';
 import aboutIcarlyImage from '../../assets/about-icarly-chat.png';
 import carImg from '../../assets/car.png';
 import voteImg from '../../assets/vote.png';
+import grupoIcarlyImg from '../../assets/grupo.png';
+
 
 export default function Home(){
   let date = new Date()
@@ -27,12 +29,17 @@ export default function Home(){
   return (
 
     <div className="container">
-       {/* <div className="imgLogo"> */}
-          <img src={logoImg} className="imgLogo" alt="Logo iCarly"/>
-        {/* </div> */}
+      <img src={logoImg} className="imgLogo" alt="Logo iCarly"/>
+        
       <header className="imgsHeader">
-      {/* <div className="test"></div> */}
-        <img src={aboutIcarlyImage} className="aboutIcarlyImage" alt="More info about iCarly"/>
+      
+        <a href= "https://es.wikipedia.org/wiki/ICarly" target="_blank">
+          <img 
+            src={aboutIcarlyImage} 
+            className="aboutIcarlyImage" 
+            alt="More info about iCarly"
+          />
+        </a>
         <div className="imgMembros">
           <img src={membrosICarly} className="imgMembros" alt="Membros iCarly"/>
         </div>
@@ -130,7 +137,9 @@ export default function Home(){
               </div>
               <div className="btnsAreaExtrasDown">
                 <button className="btnColorRed" id="btnSeeMoreVideos">
-                  see more videos
+                  <a href= "https://es.wikipedia.org/wiki/ICarly" target="_blank">
+                    see more videos
+                  </a>
                 </button>
 
                 <button className="btnColorRed " id="btnUploudVideos">
@@ -142,17 +151,38 @@ export default function Home(){
           </div>
           <footer className="footer">
             
-            {/* <img src={carImg} className="carImageFooter" alt="" /> */}
+            <img 
+              src={grupoIcarlyImg} 
+              className="imgGrupoIcarly" 
+              alt="Grupo iCalry web show"
+            />
+            
             <div className="voteVideo">
-              <img src={voteImg} className="voteImage" alt="Image vote video"/>
+              <img 
+                src={voteImg}
+                className="voteImage" 
+                alt="Image vote video"
+              />
               <p>Like this video?</p>
               <div className="likeOrDisLike">
-                <i><AiTwotoneLike id="like" size={45} color="#cc9c00" style={{border: 2, borderColor: '#000'}}/></i>
-                <i>< AiTwotoneDislike id="disLike" size={45} color="#333"/></i>
-                
-                
+                <i>
+                  <AiTwotoneLike
+                    id="like"
+                    size={45} 
+                    color="#cc9c00" 
+                    style={{border: 2, borderColor: '#000'}}
+                  />
+                </i>
+                <i>
+                  < AiTwotoneDislike 
+                    id="disLike" 
+                    size={45} 
+                    color="#333"
+                  />
+                </i>                
               </div>
             </div>
+
 
         </footer>
         </section>
