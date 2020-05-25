@@ -10,7 +10,12 @@ import {
   MdLocalMovies
 } from "react-icons/md";
 import { GoLightBulb } from "react-icons/go";
-import { FaPlayCircle, FaHeadphonesAlt, FaStar } from "react-icons/fa";
+import {
+  FaPlayCircle, 
+  FaHeadphonesAlt, 
+  FaStar,
+  FaHeart
+} from "react-icons/fa";
 import { IoMdHelp } from "react-icons/io";
 import { AiTwotoneDislike, AiTwotoneLike } from 'react-icons/ai';
 import ReactPlayer from "react-player";
@@ -22,7 +27,6 @@ import playerImg from '../../assets/player.png';
 import zipperImg from '../../assets/zipper.png';
 import avatar from '../../assets/avatar.png';
 import aboutIcarlyImage from '../../assets/about-icarly-chat.png';
-import carImg from '../../assets/car.png';
 import voteImg from '../../assets/vote.png';
 import grupoIcarlyImg from '../../assets/grupo.png';
 import logoNetflixImg from '../../assets/netflix-logo.png';
@@ -197,17 +201,37 @@ export default function Home(){
               <p id="title">Watch iCarly</p>
               <div className="watchItems">
                 <p> 
-                  {/* <i><MdLocalMovies size={30} /></i> */}
-                  <img src={logoNetflixImg} id="logoNetflix" alt="Watch in netflix"/>
-                
+                  <a href="https://www.netflix.com/br/title/70136153"
+                     target="_blank"
+                  >
+                    <img 
+                      src={logoNetflixImg} 
+                      id="logoNetflix" 
+                      alt="Watch in netflix"
+                    />
+                  </a>
                 </p>
                 <p> 
-                  {/* <i><MdMovie /></i> */}
-                  <img src={logoNickImg} id="logoNickelodeon" alt="Watch in nickelodeon"/>
+                  <a href="http://www.mundonick.com.br/icarly/"
+                    target="_blank"
+                  >
+                    <img 
+                      src={logoNickImg} 
+                      id="logoNickelodeon" 
+                      alt="Watch in nickelodeon"
+                    />
+                  </a>
                 </p>
                 <p> 
-                  {/* <i><MdMovie /></i> */}
-                  <img src={logoYoutubeImg} id="logoNickelodeon" alt="Watch in nickelodeon"/>
+                  <a href="https://www.youtube.com/watch?v=GPV_PUgPDf4&list=PL-UBAqb0hFIoc16VmGKuE-m4b9DhBeXcC"
+                    target="_blank"
+                  >
+                    <img 
+                      src={logoYoutubeImg} 
+                      id="logoNickelodeon" 
+                      alt="Watch in nickelodeon"
+                    />
+                  </a>
                 </p>
               
               </div>
@@ -217,7 +241,7 @@ export default function Home(){
 
           </footer>
           <div id="withLove">
-            <p>Made with {"<3"} by <a href="#">Gabriel Briks</a></p>
+            <p>Made with <FaHeart color="#b9132c"/> by <a id="author" href="#">Gabriel Briks</a></p>
           </div>
         </section>
         
