@@ -464,6 +464,10 @@ button#btnUploudVideos {
   );
 }
 
+.footer .voteVideo p {
+  margin-left: -25px;
+}
+
 .footer .voteVideo .likeOrDisLike i {
   margin: 25px;
   transition: 3s;
