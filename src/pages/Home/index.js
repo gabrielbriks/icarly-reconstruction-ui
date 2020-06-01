@@ -33,8 +33,15 @@ export default function Home() {
   let likeIp;
   let dislikeIp;
 
-  async function handleSearch() {
+  function handleSearch() {
     console.log("clikked");
+  }
+
+  function handleAlertSendThanks() {
+    alert(
+      `Fico mega feliz em saber que irá compartilhar esse trabalho! Basta copiar o link da URL e compartilhar 
+      ${(<FaHeart color="#b9132c" />)}`
+    );
   }
 
   async function handleLike() {
@@ -75,7 +82,7 @@ export default function Home() {
       <div className="content">
         <section>
           <div className="search">
-            <p className="todayIs">Today is </p>
+            <p className="todayIs"> Make today the best day of your life! </p>
             <p className="phraseToDay">"LEMON TUBE"</p>
 
             <div>
@@ -125,7 +132,12 @@ export default function Home() {
             </div>
           </div>
 
-          <button className="btnColorRed">
+          <button
+            className="btnColorRed"
+            onClick={() => {
+              handleAlertSendThanks();
+            }}
+          >
             <MdEmail size={22} style={{ marginRight: "10px" }} /> send this
             video to a friend
           </button>
