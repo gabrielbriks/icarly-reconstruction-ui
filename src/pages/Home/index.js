@@ -287,7 +287,7 @@ export default function Home() {
           <div id="withLove">
             <p>
               Made with <FaHeart color="#b9132c" /> by{" "}
-              <a id="author" href="#">
+              <a id="author" href="https://bit.ly/gabrieel-moraiis">
                 Gabriel Briks
               </a>
             </p>
